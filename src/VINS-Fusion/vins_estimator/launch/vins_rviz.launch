@@ -1,0 +1,7 @@
+<launch>
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find vins)/../config/vins_rviz_config.rviz" />
+    <!--
+      <node pkg="rosbag" type="record" name="SJU_out"
+      args="record /SJU_Vehicle/odom /vins_estimator/odometry -O SJU_Car_Out.bag" output="screen" />
+    -->
+</launch>
